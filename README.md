@@ -1,6 +1,6 @@
-# vue-bulma-pagination
+# Vue Bulma Pagination
 
-> Vue.js Bulma pagination component
+> A Vue.js pagination component for the Bulma CSS framework
 
 ## Build Setup
 

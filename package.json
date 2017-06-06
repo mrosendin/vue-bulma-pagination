@@ -1,6 +1,6 @@
 {
   "name": "vue-bulma-pagination",
-  "description": "Vue.js Bulma pagination component",
+  "description": "A Vue.js pagination component for the Bulma CSS framwork",
   "version": "1.0.0",
   "author": "Matthew Rosendin <matt@roseware.io>",
   "private": true,
