@@ -35,7 +35,8 @@
         :current="pagination.current"
         :total="pagination.total"
         :itemsPerPage="pagination.itemsPerPage"
-        :onChange="onChange">
+        :onChange="onChange"
+        :step="1">
       </pagination>
       <!-- End Pagination Component -->
 
