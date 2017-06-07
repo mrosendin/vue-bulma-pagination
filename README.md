@@ -12,7 +12,7 @@ npm install vue-bulma-pagination --save
 
 ## Usage
 
-See the [example]().
+See the [example](https://github.com/roseware/vue-bulma-pagination/blob/master/src/Demo.vue).
 
 ``` html
 <template>
