@@ -32,8 +32,10 @@
 
       <!-- Start Pagination Component -->
       <pagination
-        :current="config.current"
-        :total="config.total">
+        :current="pagination.current"
+        :total="pagination.total"
+        :itemsPerPage="pagination.itemsPerPage"
+        :onChange="onChange">
       </pagination>
       <!-- End Pagination Component -->
 
@@ -45,13 +47,10 @@
 import Pagination from './Pagination.vue'
 import axios from 'axios';
 
-const config = {
-  current: 1,         // Current page
-  total: null,        // Items total count
-  itemsPerPage: 10,   // Items per page
-  onChange: () => {   // Page change callback
-    console.log('Calling onChange')
-  }
+const pagination = {
+  current: 1,      // Current page
+  total: 0,     // Items total count
+  itemsPerPage: 5  // Items per page
 }
 
 export default {
@@ -60,19 +59,31 @@ export default {
   data () {
     return {
       countries: [],
-      config: config,
+      pagination: pagination,
       error: ''
     }
   },
+  methods: {
+    onChange (page) {
+      console.log(`Getting page ${page}`)
+      axios.get(`https://api.openaq.org/v1/countries?limit=5&page=${page}`)
+      .then(response => {
+        this.countries = response.data.results
+        this.pagination.current  = page
+      })
+      .catch(error => {
+        this.error = error
+      })
+    }
+  },
   created () {
-    axios.get('https://api.openaq.org/v1/countries?limit=10')
+    axios.get('https://api.openaq.org/v1/countries?limit=5')
     .then(response => {
-      console.log(response.data)
       this.keys = Object.keys(response.data.results[0])
       this.countries = response.data.results
 
       // Set pagination config based on response
-      this.config.total = response.data.meta.found
+      this.pagination.total = response.data.meta.found
     })
     .catch(error => {
       this.error = error
@@ -80,3 +91,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.hero {
+  margin-bottom: 35px;
+}
+</style>
