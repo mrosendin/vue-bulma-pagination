@@ -43,6 +43,7 @@ export default {
     }
   },
   mounted () {
+    this.paginate()
     // Check for changes in props resulting from asynchronous operations
     Object.keys(this._props).forEach(event => {
       this.$watch(event, (val, oldVal) => {
