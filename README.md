@@ -7,7 +7,7 @@
 Install via NPM:
 
 ``` bash
-npm install vue-bulma-pagination --save
+npm install vue-2-bulma-pagination --save
 ```
 
 ## Usage
