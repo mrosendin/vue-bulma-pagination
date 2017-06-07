@@ -75,7 +75,7 @@ export default {
     },
     paginate () {
       this.elements = []
-      this.size = Math.floor(this.total/this.itemsPerPage)
+      this.size = Math.ceil(this.total/this.itemsPerPage)
 
       if (this.size < this.step * 2 + 6) {
         // Case without any ellipse breaks
