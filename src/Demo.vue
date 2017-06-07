@@ -20,7 +20,7 @@
       <table class="table">
         <thead>
           <tr>
-            <th v-for="(key, value) in countries[0]">{{ key }}</th>
+            <th v-for="key in keys">{{ key }}</th>
           </tr>
         </thead>
         <tbody>
