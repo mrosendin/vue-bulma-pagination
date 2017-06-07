@@ -48,9 +48,9 @@ import Pagination from './Pagination.vue'
 import axios from 'axios';
 
 const pagination = {
-  current: 1,      // Current page
-  total: 0,     // Items total count
-  itemsPerPage: 5  // Items per page
+  current: 1,       // Current page
+  total: 0,         // Items total count
+  itemsPerPage: 5   // Items per page
 }
 
 export default {
