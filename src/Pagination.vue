@@ -101,7 +101,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-@import "../node_modules/bulma/sass/utilities/_all"
-@import "../node_modules/bulma/sass/components/pagination"
+<style lang="sass">
+@import "~bulma/sass/utilities/_all"
+@import "~bulma/sass/components/pagination"
 </style>
