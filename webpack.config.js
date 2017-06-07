@@ -19,14 +19,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: [{
+        test: /\.(sass|scss)$/,
+        use: [
+          {
             loader: "style-loader" // creates style nodes from JS strings
-        }, {
+          },
+          {
             loader: "css-loader" // translates CSS into CommonJS
-        }, {
-            loader: "sass-loader" // compiles Sass to CSS
-        }]
+          },
+          {
+            loader: "sass-loader", // compiles Sass to CSS
+            options: {
+              includePaths: [path.resolve(__dirname, 'node_modules')]
+            }
+          }
+        ]
       },
       {
         test: /\.vue$/,

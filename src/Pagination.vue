@@ -43,6 +43,7 @@ export default {
     }
   },
   mounted () {
+    this.paginate()
     // Check for changes in props resulting from asynchronous operations
     Object.keys(this._props).forEach(event => {
       this.$watch(event, (val, oldVal) => {
@@ -101,7 +102,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-@import "../node_modules/bulma/sass/utilities/_all"
-@import "../node_modules/bulma/sass/components/pagination"
+<style lang="sass">
+@import "~bulma/sass/utilities/_all"
+@import "~bulma/sass/components/pagination"
 </style>

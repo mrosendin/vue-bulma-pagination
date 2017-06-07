@@ -13,8 +13,3 @@ export default {
   props: ['page', 'current', 'onChange']
 }
 </script>
-
-<style lang="sass" scoped>
-@import "../node_modules/bulma/sass/utilities/_all"
-@import "../node_modules/bulma/sass/components/pagination"
-</style>

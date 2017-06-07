@@ -47,7 +47,7 @@ Use like below. See the [example code](https://github.com/roseware/vue-bulma-pag
 import Pagination from 'vue-2-pagination-bulma'
 import axios from 'axios';
 
-const pagination = {
+let pagination = {
   current: 1,       // Current page
   total: 0,         // Items total count
   itemsPerPage: 5   // Items per page
