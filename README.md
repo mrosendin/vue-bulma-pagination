@@ -42,7 +42,7 @@ Use like below. See the [example code](https://github.com/roseware/vue-bulma-pag
 </template>
 
 <script>
-import Pagination from 'vue-pagination-bulma'
+import Pagination from 'vue-2-pagination-bulma'
 import axios from 'axios';
 
 const pagination = {
