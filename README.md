@@ -1,5 +1,7 @@
 # Vue Bulma Pagination
 
+[![npm version](https://badge.fury.io/js/vue-2-bulma-pagination.svg)](https://badge.fury.io/js/vue-2-bulma-pagination)
+
 > A Vue.js pagination component for the Bulma CSS framework
 
 View the [demo](https://www.roseware.io/vue-bulma-pagination/).
