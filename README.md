@@ -1,18 +1,22 @@
 # Vue Bulma Pagination
 
+[![npm version](https://badge.fury.io/js/vue-2-bulma-pagination.svg)](https://badge.fury.io/js/vue-2-bulma-pagination)
+
 > A Vue.js pagination component for the Bulma CSS framework
+
+View the [demo](https://www.roseware.io/vue-bulma-pagination/).
 
 ## Installation
 
 Install via NPM:
 
 ``` bash
-npm install vue-bulma-pagination --save
+npm install vue-2-bulma-pagination --save
 ```
 
 ## Usage
 
-See the [example](https://github.com/roseware/vue-bulma-pagination/blob/master/src/Demo.vue).
+Use like below. See the [example code](https://github.com/roseware/vue-bulma-pagination/blob/master/src/Demo.vue) in the demo.
 
 ``` html
 <template>
@@ -40,7 +44,7 @@ See the [example](https://github.com/roseware/vue-bulma-pagination/blob/master/s
 </template>
 
 <script>
-import Pagination from './Pagination.vue'
+import Pagination from 'vue-2-pagination-bulma'
 import axios from 'axios';
 
 const pagination = {

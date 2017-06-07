@@ -1,7 +1,7 @@
 {
-  "name": "vue-bulma-pagination",
+  "name": "vue-2-bulma-pagination",
   "description": "A Vue.js pagination component for the Bulma CSS framwork",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Matthew Rosendin <matt@roseware.io>",
   "keywords": [
     "vue",
@@ -13,18 +13,18 @@
     "type": "git",
     "url": "https://github.com/roseware/vue-bulma-pagination"
   },
-  "licenses": "MIT",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "axios": "^0.16.2",
     "bulma": "^0.4.2",
     "vue": "^2.3.3"
   },
   "devDependencies": {
+    "axios": "^0.16.2",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-preset-env": "^1.5.1",
