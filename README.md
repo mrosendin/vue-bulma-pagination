@@ -16,6 +16,18 @@ npm install vue-2-bulma-pagination --save
 
 ## Usage
 
+**Props**
+
+|Name|Type|Required|Default|Description|
+|----|----|--------|-------|-----------|
+|current|Number|True|N/A|Current page|
+|total|Number|False|0|Total number of items|
+|itemsPerPage|Number|True|N/A|Items per page|
+|step|Number|False|3|Number of pages to display (besides first and last)|
+|onChange|Function|True|N/A|Page changed event callback. Parameters: page|
+
+**Example**
+
 Use like below. See the [example code](https://github.com/roseware/vue-bulma-pagination/blob/master/src/Demo.vue) in the demo.
 
 ``` html
