@@ -4,7 +4,7 @@
 
 > A Vue.js pagination component for the Bulma CSS framework
 
-View the [demo](https://www.roseware.io/vue-bulma-pagination/).
+View the [demo](https://roseware.github.io/vue-bulma-pagination/).
 
 ## Installation
 
