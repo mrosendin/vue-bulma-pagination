@@ -4,7 +4,7 @@
       <a class="pagination-previous" v-if="current > 1" @click="onChange(current - 1)">&larr; Previous</a>
       <a class="pagination-next" v-if="size > 1 && current < size" @click="onChange(current + 1)">Next &rarr;</a>
       <ul class="pagination-list">
-        <component v-for="element in elements" :is="element.type" :page="element.page" :current="current" :onChange="onChange"/>
+        <component v-for="element in elements" :key="element"  :is="element.type" :page="element.page" :current="current" :onChange="onChange"/>
       </ul>
     </nav>
   </div>
